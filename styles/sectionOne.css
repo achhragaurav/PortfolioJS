@@ -1,0 +1,146 @@
+@import "./main.css";
+
+.sectionOne {
+  width: 100vw;
+  height: 140vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  background: white;
+  color: black;
+}
+.left-scroll-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+}
+.image-partOne {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 550px;
+  /* background: var(--light-white); */
+  transform-style: preserve-3d;
+}
+.image-partOne img {
+  width: 50vw;
+  position: relative;
+  left: 50%;
+  z-index: 3;
+  filter: grayscale();
+}
+.image-partTwo {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 550px;
+  transform-style: preserve-3d;
+  /* background: var(--light-black); */
+}
+.image-partTwo img {
+  width: 50vw;
+  position: relative;
+  right: 50%;
+  z-index: 2;
+}
+.tag-line {
+  position: absolute;
+  z-index: 50;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tag-line h1 {
+  font-size: 12vh;
+  color: var(--med-red);
+  font-family: "MuseoModerno", cursive;
+  text-shadow: 3px 3px 10px black;
+  word-spacing: 1vw;
+}
+.tag-line h2 {
+  font-size: 5vh;
+  color: var(--white);
+  font-family: "MuseoModerno", cursive;
+  text-shadow: 3px 3px 5px var(--dark-red);
+  word-spacing: 1vw;
+}
+@media screen and (max-width: 600px) {
+  .who-am-i {
+    max-width: 50%;
+    color: black;
+    font-size: 3vw;
+  }
+
+  .sectionZero {
+    width: 100vw !important;
+    height: 90vh !important;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+  }
+  .sectionZero svg {
+    width: 60vw !important;
+    height: 60vh !important;
+  }
+  .circle {
+    width: 500px !important;
+    height: 400px !important;
+    background: linear-gradient(to bottom, #2b1313, #2b131300);
+    position: absolute;
+    top: -0%;
+    left: 25%;
+  }
+  .scrollHeading {
+    display: none !important;
+  }
+  .nameSVG {
+    left: -10%;
+    top: -10%;
+    position: relative;
+    z-index: 50;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .who-am-i {
+    left: 27%;
+    color: black;
+    font-size: 1vw;
+    max-width: 50%;
+  }
+
+  .who-am-i h1 {
+    font-size: 8vh;
+    max-width: 50vw;
+  }
+  .who-am-i p {
+    font-size: 2vh;
+    max-width: 30vw;
+  }
+
+  .image-partOne img {
+    width: 25vw;
+    position: relative;
+    left: 75%;
+    z-index: 2;
+    filter: grayscale();
+  }
+  .image-partTwo img {
+    width: 25vw;
+    position: relative;
+    right: 25%;
+    z-index: 2;
+  }
+}
