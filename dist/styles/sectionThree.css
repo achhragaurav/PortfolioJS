@@ -1,0 +1,67 @@
+@import "./main.css";
+.sectionThree {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+footer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-info {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-info h1 {
+}
+.contact-info span {
+}
+.contact-info p {
+}
+.number {
+}
+.number i {
+}
+.number h3 {
+}
+.social {
+}
+.social i {
+}
+.social i a {
+}
+.form {
+  width: 40%;
+  height: 80%;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#name {
+}
+#name-label {
+}
+#email {
+}
+#email-label {
+}
+#message {
+}
+#message-label {
+}
