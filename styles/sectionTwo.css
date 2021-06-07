@@ -1,0 +1,92 @@
+@import "./main.css";
+.sectionTwo {
+  width: 100vw;
+  height: 320vh;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+.sectionTwo #work {
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  font-size: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 40%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.big-projects #bigpro {
+  font-size: 5vh;
+  width: 90%;
+  height: 10%;
+}
+.project-card {
+  width: 80%;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6vh;
+}
+.project-card-image {
+  width: 50%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  filter: contrast(0.8);
+}
+.project-card-image:hover > #image-id {
+  position: relative;
+  transform: scale(1.1);
+  transition: all 3s ease;
+}
+.project-card-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.project-card img {
+  width: 80%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.project-card h1 {
+}
+.project-card p {
+}
+.project-card button {
+  width: 6vw;
+  height: 4vh;
+}
+.small-projects {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40%;
+}
+.small-projects #smallpro {
+  font-size: 5vh;
+  width: 90%;
+}
